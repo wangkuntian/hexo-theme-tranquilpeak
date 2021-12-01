@@ -1,5 +1,4 @@
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/valine/1.4.10/Valine.min.js"></script>
 <div id="vcomments"></div>
 <script>
     new Valine({
@@ -7,14 +6,13 @@
         appId: '<%= theme.valine.appId %>',
         appKey: '<%= theme.valine.appKey %>', 
         placeholder: '<%= theme.valine.placeholder %>' ,
-        notify: '<%= theme.valine.notify %>',
-        verity: '<%= theme.valine.verity %>',
         path: window.location.pathname,
         avatar: '<%= theme.valine.avatar %>',
         meta: ['nick','mail','link'],
         pageSize: '<%= theme.valine.pageSize %>',
         lang: '<%= theme.valine.lang %>',
         visitor: '<%= theme.valine.visitor %>',
-        highlight: '<%= theme.valine.highlight %>'
+        highlight: '<%= theme.valine.highlight %>',
+	recordIP: '<%= theme.valine.recordIP %>',
     });
 </script>
