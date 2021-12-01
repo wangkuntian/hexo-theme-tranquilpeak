@@ -1,0 +1,23 @@
+<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+<div id="vcomments"></div>
+<script>
+  new Waline({
+    el: "#vcomments",
+    serverURL: "<%= theme.waline.serverURL %>",
+    lang: "<%= theme.waline.lang %>",
+    visitor: "<%= theme.waline.visitor %>",
+    emoji: [
+      "https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili",
+      "https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq",
+    ],
+    placeholder: "<%= theme.waline.placeholder %>",
+    dark: "<%= theme.waline.dark %>",
+    meta: ["nick", "mail", "link"],
+    requiredMeta: [],
+    wordLimit: "<%= theme.waline.wordLimit %>",
+    pageSize: "<%= theme.waline.pageSize %>",
+    highlight: "<%= theme.waline.highlight %>",
+    copyright: "<%= theme.waline.copyright %>",
+    avatar: "<%= theme.waline.avatar %>",
+  });
+</script>

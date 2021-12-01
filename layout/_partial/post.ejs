@@ -34,9 +34,9 @@
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
-        <span id="<%= post.path %>" class="leancloud_visitors" data-flag-title="<%= post.title %>">
-            <em class="post-meta-item-text">阅读量</em>
-            <i class="leancloud-visitors-count"></i>
+        <span >
+            <em>阅读量</em>
+            <span id="<%= post.path %>" class="waline-visitor-count">
         </span>
         <% if ((post.tags) && (post.tags.length > 0)) { %>
             <div class="post-footer-tags">
@@ -61,8 +61,8 @@
 
 <div class="main-content-wrap">
     <% if (post.comments) { %>
-        <% if (theme.valine.enable) { %>
-            <%- partial('post/valine') %>  
+        <% if (theme.waline.enable) { %>
+            <%- partial('post/waline') %>  
         <% } %>
     <% } %>
 </div>

@@ -312,15 +312,26 @@ sharing_options:
 #        icon: "fab fa-odnoklassniki"
 #        url: "https://connect.ok.ru/offer?url={{post.permalink}}"
 
-valine:
+waline:
   enable: true
-  appId: xxxx-xxxx-xxxx-xxxx
-  appKey: xxxxx-xxxxx-xxxx-xxxx
-  placeholder: ヾﾉ≧∀≦)o来啊，快活啊!
-  avatar: wavatar
-  pageSize: 10
+  serverURL: https://blog-api-nu-nine.vercel.app/
   lang: zh-cn
   visitor: true
-  highlight: true
-  recordIP: true
-
+  emoji: 
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq
+  placeholder: ヾﾉ≧∀≦)o来啊，快活啊!
+  dark: auto
+  meta: 
+    - nick
+    - mail
+    - link
+  requiredMeta: 
+    - nick
+    - mail
+  login: enable
+  wordLimit: 200
+  pageSize: 10
+  highlight: hanabi
+  copyright: true
+  avatar: wavatar
