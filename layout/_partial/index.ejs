@@ -2,7 +2,12 @@
     <% page.posts.each(function(post) { %>
     <%
         var tableOfContents = null;
-        var thumbnailImageUrl = post.thumbnailImageUrl;
+        var thumbnailImageUrl = null;
+        if (post.thumbnailImage != null) {
+            // 修改文章图片的路径
+            // url_for在路径前加上根路径
+            thumbnailImageUrl = url_for(post.thumbnailImage);
+        }
         var postContent = post.content;
         // Define default position for the thumbnail image
         var thumbnailImagePosition = theme.thumbnail_image_position;
