@@ -29,7 +29,7 @@
     }
     &.info {
         border-color:     map-get($colors, 'primary');
-        background-color: lighten(map-get($colors, 'primary'), 37%);
+        background-color: lighten(map-get($colors, 'primary'), 35%);
 
         &:not(.no-icon) {
             &:before {
@@ -51,7 +51,7 @@
     }
     &.warning {
         border-color:     map-get($colors, 'warning');
-        background-color: lighten(map-get($colors, 'warning'), 42%);
+        background-color: lighten(map-get($colors, 'warning'), 35%);
         &:not(.no-icon) {
             &:before {
                 content: "\f071";
@@ -61,7 +61,7 @@
     }
     &.danger {
         border-color:     map-get($colors, 'danger');
-        background-color: lighten(map-get($colors, 'danger'), 42%);
+        background-color: lighten(map-get($colors, 'danger'), 35%);
         &:not(.no-icon) {
             &:before {
                 content: "\f05e";

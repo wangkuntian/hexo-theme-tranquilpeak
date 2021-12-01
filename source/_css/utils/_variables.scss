@@ -2,33 +2,33 @@
 // --------------------------------------------
 
 // Font families
-$open-sans:            'Open Sans';
-$open-sans-sans-serif: 'Open Sans', sans-serif;
-$merriweather-serif:   'Merriweather', serif;
-$monospace:             Menlo, Consolas, monospace;
+$kaiti:                'HYKaiTiS';
+$powerline:            'Meslo LG M for Powerline';
+$zhonghei:             'HYZhongHeiS';
 
-$font-family-base: $open-sans-sans-serif;
+$font-family-base: $kaiti;
 
 $font-families: (
    // base
-   'headings':          $open-sans-sans-serif,
+   'headings':          $zhonghei,
    // components
-   'code':              $monospace,
-   'caption':           $merriweather-serif,
-   'image-gallery':     $open-sans,
-   'post-header-cover': $merriweather-serif,
-   'post-meta':         $open-sans-sans-serif,
-   'post-content':      $merriweather-serif,
-   'post-excerpt-link': $open-sans-sans-serif,
-   'highlight':         $monospace,
+   'code':              $powerline,
+   'caption':           $kaiti,
+   'image-gallery':     $kaiti,
+   'post-header-cover': $kaiti,
+   'post-meta':         $kaiti,
+   'post-content':      $kaiti,
+   'post-excerpt-link': $kaiti,
+   'highlight':         $powerline,
    // layout
-   'sidebar':           $open-sans-sans-serif
+   'sidebar':           $kaiti
 );
 
-// equal to 15px
-$font-size-base:      1.6rem;
-$font-color-base:     #5d686f;
-$line-height-base:    1.9em;
+
+$font-size-base:      2.0rem;
+// $font-color-base:     #5d686f;
+$font-color-base:     #25282b;
+$line-height-base:    2.0em;
 $letter-spacing-base: 0.01em;
 
 // Reduction of font size base on small screen and down
@@ -36,13 +36,13 @@ $font-size-base-sm-screen-reduction-factor: 0.1rem;
 
 // Font size : (X.Xrem = XXpx, 1.0rem = 10px)
 $font-size: (
-    'xxlarge': 2rem,
-    'xlarge': 1.8rem,
-    'large':  1.7rem,
+    'xxlarge': 2.4rem,
+    'xlarge': 2.2rem,
+    'large':  2.1rem,
     'base':   $font-size-base,
-    'medium': 1.5rem,
-    'small':  1.3rem,
-    'xsmall': 1rem
+    'medium': 1.9rem,
+    'small':  1.7rem,
+    'xsmall': 1.5rem
 );
 
 // Colors
@@ -198,17 +198,17 @@ $highlight-colors: (
 );
 // Highlight text
 $highlight-text-bg-colors: (
-    'red':     lighten(red, 45%),
+    'red':     lighten(red, 40%),
     'green':   lighten(green, 65%),
     'blue':    lighten(blue, 45%),
     'purple':  lighten(purple, 70%),
     'orange':  lighten(orange, 40%),
     'yellow':  lighten(yellow, 40%),
     'cyan':    lighten(cyan, 40%),
-    'primary': lighten(map-get($colors, 'primary'), 35%),
+    'primary': lighten(map-get($colors, 'primary'), 32%),
     'success': lighten(map-get($colors, 'success'),35%),
-    'warning': lighten(map-get($colors, 'warning'), 40%),
-    'danger':  lighten(map-get($colors, 'danger'), 40%),
+    'warning': lighten(map-get($colors, 'warning'), 35%),
+    'danger':  lighten(map-get($colors, 'danger'), 30%),
 );
 // Image gallery photos
 // Space between 2 photos
