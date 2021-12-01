@@ -44,9 +44,7 @@
             <%- partial('post/actions', {postContent: postContent}) %>
         <% } %>
         <% if (post.comments) { %>
-            <% if (theme.valine.enable) { %>
-                <%- partial('post/valine') %> 
-            <% } else if (theme.disqus_shortname) { %>
+            <% if (theme.disqus_shortname) { %>
                 <%- partial('post/disqus') %>
             <% } else if (theme.gitment.enable) { %>
                 <%- partial('post/gitment') %>
@@ -56,4 +54,12 @@
         <% } %>
     </div>
 </article>
+
+<div class="main-content-wrap">
+    <% if (post.comments) { %>
+        <% if (theme.valine.enable) { %>
+            <%- partial('post/valine') %>  
+        <% } %>
+    <% } %>
+</div>
 
