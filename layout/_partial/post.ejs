@@ -34,6 +34,10 @@
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
+        <span id="<%= post.path %>" class="leancloud_visitors" data-flag-title="<%= post.title %>">
+            <em class="post-meta-item-text">阅读量</em>
+            <i class="leancloud-visitors-count"></i>
+        </span>
         <% if ((post.tags) && (post.tags.length > 0)) { %>
             <div class="post-footer-tags">
                 <span class="text-color-light text-small"><%= __('post.tagged_in') %></span><br/>
@@ -53,10 +57,6 @@
             <% } %>
         <% } %>
     </div>
-    <span id="<% post.path %>" class="leancloud_visitors" data-flag-title="<% post.title %>">
-        <em class="post-meta-item-text">阅读量 </em>
-        <i class="leancloud-visitors-count"></i>
-    </span>
 </article>
 
 <div class="main-content-wrap">
