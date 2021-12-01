@@ -20,7 +20,7 @@
     postContent = postContent.replace(/<!-- ?endcontent ?-->/g, '</div>')
                                .replace(/<!-- ?content ?-->/g, '<div class="main-content-wrap">');
 %>
-<article class="post leancloud_visitors">
+<article class="post">
     <% if (post.coverCaption) { %>
         <span class="post-header-cover-caption caption"><%= post.coverCaption %></span>
     <% } %>
@@ -53,6 +53,10 @@
             <% } %>
         <% } %>
     </div>
+    <span id="<% post.path %>" class="leancloud_visitors" data-flag-title="<% post.title %>">
+        <em class="post-meta-item-text">阅读量 </em>
+        <i class="leancloud-visitors-count"></i>
+    </span>
 </article>
 
 <div class="main-content-wrap">
